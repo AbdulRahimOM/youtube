@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyYouTube</title>
+    <link rel="icon" href="images/yt-title.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="generalstyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="mainbody.css">
+    <link rel="stylesheet" href="thumb-scr-style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="body-equivalent">
+        <div class="header">
+            <div class="header-left">
+                <div class="yt-menu" onclick="menuclick()">
+                    <img src="images/menu.png" alt="">
+                </div>
+                <div class="logo-sect">
+                    <!-- <div class=""></div> -->
+
+                    <div class="yt-logo">
+                        <img src="images/logo.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="search-space1">
+                    <div class="search-box-space">
+                        <input type="text" id="search-box" placeholder="Search">
+                    </div>
+                </div>
+                <div class="search-button-space">
+                    <input id="search-button" readonly>
+                </div>
+                <div class="mic-space">
+                    <button id="mic-button"></button>
+                </div>
+                <div class="new-search-icon">
+                </div>
+                <div class="new-mic-icon">
+                </div>
+                
+            </div>
+            <div class="header-right">
+                <div class="button-spaces"><button id="yt-create-button"></button></div>
+                <div class="button-spaces"><button id="notification-bell"></button></div>
+                <div class="button-spaces"><button id="profile-button"></button></div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="left-sect">
+                <div id="reduced-left">
+                    <button class="left-reduced-buttons"><img src="images/home1.png"
+                            alt=""><br>Home</button>
+                    <button class="left-reduced-buttons"><img src="images/2.JPG" alt=""><br>Shorts</button>
+                    <button class="left-reduced-buttons"><img src="images/3.JPG" alt=""><br>Subscriptions</button>
+                    <button class="left-reduced-buttons"><img src="images/1.JPG" alt=""><br>Library</button>
+                </div>
+                <div id="scrollable-left">
+                    <button class="left-buttons" style="background-color: #F2F2F2;"><img
+                            src="images/home.JPG" alt="">Home</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">Shorts</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Subscriptions</button>
+                    <hr>
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Library</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">History</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Watch Later</button>
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Better references</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">Liked videos</button>
+                    <hr class="left-end-touch">
+                    <h3 class="sideheadings">Subscriptions</h3 class="sideheadings">
+                    <button class="left-buttons-subscriptions"><img
+                            src="images/thumb-icon1.jpg"
+                            alt="">Brototype</button>
+                    <button class="left-buttons-subscriptions"><img
+                            src="images/thumb-icon2.jpg"
+                            alt="">Football World</button>
+                    <hr class="left-end-touch">
+                    <h3 class="sideheadings">Explore</h3 class="sideheadings">
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Trending</button>
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Shopping</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">Music</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Films</button>
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Live</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">Gaming</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">News</button>
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Sport</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">Learning</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Fashion & beauty</button>
+                    <hr class="left-end-touch">
+                    <h3 class="sideheadings">More from YouTube</h3 class="sideheadings">
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Youtube Premium</button>
+                    <button class="left-buttons"><img src="images/2.JPG" alt="">Youtube Music</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Fashion & beauty</button>
+                    <button class="left-buttons"><img src="images/1.JPG" alt="">Fashion & beauty</button>
+                    <button class="left-buttons"><img src="images/3.JPG" alt="">Fashion & beauty</button>
+                </div>
+                
+
+            </div>
+            <div id="blank-left-sect-dup"></div>
+            <div class="right-main-sect">
+                <div class="tab-section">
+                    <div class="tabs-sub-section">
+                        <button class="top-tabs" style="background-color: rgb(29, 29, 29); color: #fff;">All</button>
+                        <button class="top-tabs">Computer programming</button>
+                        <button class="top-tabs">User interface design</button>
+                        <button class="top-tabs">Laptops</button>
+                        <button class="top-tabs">Alldfkkjsf</button>
+                        <button class="top-tabs">Alldafkjjksjf</button>
+                        <button class="top-tabs">Allsalkdfjajfd</button>
+                        <button class="top-tabs">Alldfkkjsf</button>
+                        <button class="top-tabs">Allda fkjjksjf</button>
+                        <button class="top-tabs">Allsal lkllkkdfjajfd</button>
+                        <button class="top-tabs">Alldfkkjsf</button>
+                        <button class="top-tabs">Alldafkjjksjf</button>
+                        <button class="top-tabs">Alldfkkjsf</button>
+                        <button class="top-tabs">Alldafkjjksjf</button>
+                        <button class="top-tabs">Alldfkkjsf</button>
+                        <button class="top-tabs">Alldafkjjksjf</button>
+                        <button class="top-tabs">Alldfkkjsf</button>
+                        <button class="top-tabs">Alldafkjjksjf</button>
+    
+                    </div>
+
+
+                </div>
+                <div class="contents-screen">
+                    <div class="container-fluid">
+                        <div class="row"> <!--col-12 col-sm-6 col-md-6 col-lg-4-->
+                            
+                            
+                            
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4">
+                                <div class="thumbnail-div">
+                                    <img id="image"  class="thumbnail" src="images/thumb1.jpg">
+                                </div>
+                                <div class="thumb-footer">
+                                    <div class="thumbnail-icon-div">
+                                        <img class="thumbnail-icon"
+                                        src="images/thumb-icon1.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="thumbnail-info">
+                                        <div class="thumbnail-title">
+                                            Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh
+                                        </div>
+                                        <div class="channel-info">
+                                            Brototype
+                                        </div>
+                                        <div class="video-status-info">
+                                            96K views • 20 hours ago
+                                        </div>
+                                    </div>
+                                </div>            
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4">
+                                <div class="thumbnail-div">
+                                    <img id="image"  class="thumbnail" src="images/thumb2.jpg">
+                                </div>
+                                <div class="thumb-footer">
+                                    <div class="thumbnail-icon-div">
+                                        <img class="thumbnail-icon"
+                                        src="images/thumb-icon2.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="thumbnail-info">
+                                        <div class="thumbnail-title">
+                                            Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh
+                                        </div>
+                                        <div class="channel-info">
+                                            Brototype
+                                        </div>
+                                        <div class="video-status-info">
+                                            96K views • 20 hours ago
+                                        </div>
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb3.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb4.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb5.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb6.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb7.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb8.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb9.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb10.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb1.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb2.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb3.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb4.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb5.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+                            <div class="thumbnail-and-info col-12 col-sm-6 col-md-6 col-lg-4"><div class="thumbnail-div"><img id="image"  class="thumbnail" src="images/thumb6.jpg"></div><div class="thumb-footer"><div class="thumbnail-icon-div"><img class="thumbnail-icon" src="images/thumb-icon2.jpg" alt=""></div><div class="thumbnail-info"><div class="thumbnail-title">Communicate Clearly and Confidently With AI-Powered Writing Suggestions nsjhdhshdsjhdsh</div><div class="channel-info">Brototype</div><div class="video-status-info">96K views • 20 hours ago</div></div></div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="logo-in-navbar">
+        <div class="header-left">
+            <div class="yt-menu" onclick="menuclick()">
+                <img src="images/menu.png" alt="">
+            </div>
+            <div class="logo-sect">
+
+                <div class="yt-logo">
+                    <img src="images/logo.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-overlay">
+        
+        <button class="left-buttons" style="background-color: #F2F2F2;"><img
+                src="images/home.JPG" alt="">Home</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">Shorts</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Subscriptions</button>
+        <hr>
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Library</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">History</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Watch Later</button>
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Better references</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">Liked videos</button>
+        <hr class="left-end-touch">
+        <h3 class="sideheadings">Subscriptions</h3 class="sideheadings">
+        <button class="left-buttons-subscriptions"><img
+                src="images/thumb-icon1.jpg"
+                alt="">Brototype</button>
+        <button class="left-buttons-subscriptions"><img
+                src="images/thumb-icon2.jpg"
+                alt="">Football World</button>
+        <hr class="left-end-touch">
+        <h3 class="sideheadings">Explore</h3 class="sideheadings">
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Trending</button>
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Shopping</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">Music</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Films</button>
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Live</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">Gaming</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">News</button>
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Sport</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">Learning</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Fashion & beauty</button>
+        <hr class="left-end-touch">
+        <h3 class="sideheadings">More from YouTube</h3 class="sideheadings">
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Youtube Premium</button>
+        <button class="left-buttons"><img src="images/2.JPG" alt="">Youtube Music</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Fashion & beauty</button>
+        <button class="left-buttons"><img src="images/1.JPG" alt="">Fashion & beauty</button>
+        <button class="left-buttons"><img src="images/3.JPG" alt="">Fashion & beauty</button>
+    </div>
+    <div id="nav-cover" onclick="hideNavbar()"></div>
+    <script src="yt_script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

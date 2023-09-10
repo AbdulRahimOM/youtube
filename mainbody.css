@@ -1,0 +1,269 @@
+* {
+    border: 0;
+    padding: 0;
+}
+html,body{
+    /* height: 100%; */
+    padding-bottom: 1000px;
+}
+.body-equivalent{
+    display: grid;
+    grid-template-rows: 56px 1fr;
+    height: 100vh;
+    grid-template-areas: "header" 
+    "main-body" ;
+    
+}
+.header{
+    grid-area: header;
+}
+
+button {
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid lightgray;
+    border-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.left-end-touch {/*hr type*/
+    left: 0;
+    width: 100%;
+    margin-left: -10px;
+}
+
+
+#reduced-left {
+    width: 64px;
+    display: none;  
+    overflow: hidden;
+    padding: 0px 0px 0px 5px;
+    /* margin: 0; */
+    
+}
+#scrollable-left {
+    width: 240px;
+    padding: 12px;
+    
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    --scroll-width: 8px;
+
+    &::-webkit-scrollbar {
+        width: var(--scroll-width);
+    }
+    &:hover::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+        border-radius: calc(var(--scroll-width)/2);
+    }
+    /* display: none; */
+}
+
+#navbar-overlay {
+    /* display: none; */
+    /* visibility: ""; */
+    width: 0px;
+    padding: 12px;
+    background-color: white;
+    visibility: hidden;
+    /* background-color: aqua; */
+    z-index: 300;
+    overflow-y: scroll;
+    height: 100%;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    margin: 0;
+    transition: .1s ease-in;
+    --scroll-width: 8px;
+
+    &::-webkit-scrollbar {
+        width: var(--scroll-width);
+    }
+    &:hover::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+        border-radius: calc(var(--scroll-width)/2);
+    }
+
+}
+
+
+
+
+.left-reduced-buttons{
+    
+    font-size: 9px;
+    text-align: center;
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+
+    & img {
+        width: 23px;
+        margin-bottom: 7px;
+    }
+
+    &:hover {
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+
+.left-buttons,
+.left-buttons-subscriptions {
+    font-size: 14px;
+    width: 204px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    background-color: white;
+
+    text-align: left;
+    cursor: pointer;
+
+    & img {
+        width: 23px;
+        float: left;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    &:hover {
+        background-color: #F2F2F2;
+    }
+}
+
+.left-buttons-subscriptions img {
+    border-radius: 50%;
+}
+
+.sideheadings {
+    margin-left: 17px;
+    margin-bottom: 8px;
+    font-family: YoutubeSans6;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+
+
+.main-body{
+    /* grid-area: main-body; */
+    /* background-color: aqua; */
+    /* height: 100%; */
+    position: relative;
+    top: 112px;
+    bottom: 0;
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
+}
+
+.left-sect {
+    position: fixed;
+    top: 56px;
+    bottom: 0px;
+    /* width: 100px; */
+    /* background-color: red; */
+    /* background-color: lightpink; */
+}
+#blank-left-sect-dup{
+    width: 240px;
+    /* width: 64px; */
+    /* background-color: blueviolet    ; */
+
+}
+
+
+
+
+
+
+
+
+.right-main-sect {
+    /* float: none; */
+    /* width: 83%; */
+    /* height: 100%; */
+    color: #000000;
+    padding-left: 16px;
+    /* position: relative; */
+    /* left: 240px; */
+    /* margin-top: 10px; */
+    /* background-color: rgb(251, 255, 0); */
+    flex: 1;
+}
+
+.tab-section {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    z-index: 100;
+    /* max-height: 30px; */
+    background-color: white;
+    /* background-color: green; */
+    /* padding-bottom: 11px; */
+}
+
+.tabs-sub-section {
+    align-items: center;
+    height: 32px;
+    /* position: fixed; */
+    width: 100%;
+    background-color: white;
+    
+    float: left;
+    z-index: 100;
+    overflow: hidden;
+    padding-bottom: 0px;
+}
+
+.top-tabs {
+    /* vertical-align: middle; */
+    border: 0px;
+    background-color: #f8f4f4;
+    /* background-color: blue; */
+
+    height: 32px;
+    border-radius: 8px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+@font-face {
+    font-family: YoutubeSans;
+    src: url(fonts/YouTubeSansMedium.otf);
+}
+
+@font-face {
+    font-family: YoutubeSans6;
+    src: url(fonts/YouTubeSansDarkLight.otf);
+}
+
+@font-face {
+    font-family: YoutubeSans8;
+    src: url(fonts/YouTubeSansDarkRegular.otf);
+}

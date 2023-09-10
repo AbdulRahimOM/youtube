@@ -1,0 +1,89 @@
+.contents-screen {
+    position: relative;
+    margin-top: 24px;
+}
+
+.thumbnail-and-info {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-bottom: 40px;
+}
+.thumbnail-div{
+
+}
+
+.thumbnail {
+    
+    width: 100%;
+    /* width: 330px; */
+    /* width: 100%; */
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: .9;
+    &:hover {
+        opacity: 1;
+    }
+
+}
+.thumb-footer{
+    display: flex;
+    flex-direction: row;  
+    /* background-color: rebeccapurple;  */
+}
+.thumbnail-icon-div{
+
+}
+.thumbnail-icon {
+    width: 30px;
+    margin: 12px 12px 12px 0px;
+    /* padding: 0; */
+    border-radius: 15px;
+    /* float: left; */
+    cursor: pointer;
+}
+
+.thumbnail-info {
+    flex: 1;
+    width: 80%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail-title {
+    font-family: YoutubeSans;
+    height: 50px;
+    font-size: large;
+    color: #000;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.channel-info {
+    font-family: YoutubeSans8;
+    color: #555;
+}
+
+.video-status-info {
+    font-family: YoutubeSans8;
+    color: #555;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 1313px) {
+
+    #blank-left-sect-dup{
+        width: 64px;    
+    }
+}
+@media only screen and (max-width: 792px) {
+    #blank-left-sect-dup{
+        width: 0;    
+    }
+}
+
+
+
+
